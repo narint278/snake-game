@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+canvas {
+    background-color: #1abc9c;
+    border: 3px solid #16a085;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-info p, .game-info label {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+select {
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 1px solid #16a085;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #16a085;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .game-info p, .game-info label {
+        font-size: 1.2rem;
+    }
+
+    button, select {
+        font-size: 0.9rem;
+    }
+}
